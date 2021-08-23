@@ -13,7 +13,7 @@ namespace HttpFileContentExampleConsole
          * file-stream-result
          * physical-file
          */
-        [Option('u', "url", Required = false, HelpText = "url. For example 'http://172.16.66.20:5000/api/file/file-content-result'", Default = "http://172.16.66.20:5000/api/file/file-content-result")]
+        [Option('u', "url", Required = true, HelpText = "url. For example 'http://localhost:5000/api/file/file-content-result'")]
         public string Url { get; set; }
 
         [Option('p', "path", Required = true, HelpText = "File path")]
